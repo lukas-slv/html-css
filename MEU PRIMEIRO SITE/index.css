@@ -1,0 +1,377 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Bebas+Neue&family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Jacquard+24&family=Jersey+10&family=Lugrasimo&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sevillana&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+  
+body{
+  margin: 0px;
+  background-color: rgb(238, 251, 252);
+}
+header {
+  box-shadow: 0px -10px 25px #3b3e3fb7;
+  background-color: #d6e8f1; 
+}
+nav{
+  box-shadow:0px 0px 12px #3c475a52 ;
+  background-color:rgb(188, 216, 231) ;
+  height: 50px;
+  text-align: end;
+ 
+} 
+
+h1 {
+  font-size: 3.5rem; /* Tamanho padrão para telas grandes */
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem; /* Tamanho para telas médias */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.9rem; /* Tamanho para telas pequenas */
+  }
+}
+
+.h1-topo {
+  text-align: center;
+  text-shadow: 1px 1px 5px rgba(49, 49, 49, 0.438);
+  Color:rgb(28, 0, 81);
+  font-family: "Roboto", sans-serif; 
+  margin-bottom: -8px;
+ }
+
+ .container-img-topo{
+  filter: drop-shadow( 1px 1px 5px #00000056);
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centraliza as imagens horizontalmente */
+  align-items: center; /* Centraliza as imagens verticalmente */
+  height: auto; /* Mantém a proporção da imagem */
+  padding-bottom: 15px;
+ }
+ 
+.h2-topo{
+  color:#0707b3d0;
+  margin: 50px 0px 20px ;
+  font-family:  "Roboto", sans-serif;
+  font-size: clamp(1rem, 0.3043rem + 3.4783vw, 1.9rem);
+}
+
+
+.h3-text{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 50px;
+  margin-top:0px ;
+  
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  font-family: justify, sans-serif;
+  font-weight: 700;
+  list-style: none;  
+}
+
+.nav-item {
+  
+  font-size: 15px;
+  color: #1C0051;
+  margin: 0 15px;
+  text-decoration: none;   
+  transition-duration: .5s;
+}
+
+.nav-item:hover {
+  color: rgba(0, 81, 255, 0.747);
+  
+}
+
+.logo-menu-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 3px;
+}
+
+.lodo-curso {
+  margin-right: 20px; /* Ajuste a margem conforme necessário */
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+  margin-right: 0px;
+
+}
+
+/* Estilo para o ícone do menu "hambúrger" */
+.menu-toggle {
+  display: none; /* Oculto por padrão, exibido apenas em telas pequenas */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  border-radius: 8px;
+  width: 23px;
+  height: 3px;
+  background-color: #1C0051;
+  margin: 3px 0;
+}
+
+/* Media query para telas pequenas */
+@media (max-width: 768px) {
+  .nav-links {
+   display: none; /* Oculta os links de navegação em telas pequenas */
+  }
+
+ .menu-toggle {
+    display: flex; /* Exibe o ícone de menu "hamburger" */    
+    flex-direction: column;
+    margin-right: 15px;
+  }
+}  
+
+/* Opcional: Estilos para quando o menu está visível (em JavaScript) */
+
+.navbar.active .nav-links { 
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Ajuste conforme necessário */
+    right: 20px; /* Ajuste conforme necessário */
+    background-color: #333;
+    width: 200px; /* Ajuste conforme necessário */
+} 
+
+.navbar.active .menu-toggle {
+    display: none; /* Oculta o ícone do menu "hamburger" quando o menu está aberto */
+} 
+
+.menu-span{
+  display:  inline-block;
+  width: 27px;
+  height: 27px;
+  margin-left: 696px;
+}
+
+main{
+  min-width: 300px;
+  max-width: 1100px;
+  margin: 22px auto;
+  padding:27pX 20px 0pX;
+  background-color: rgba(238, 251, 252);
+  
+}
+
+
+
+aside{
+  margin-top: 10px;
+  margin-bottom: 30px;
+} 
+
+.p-ul{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 17px;
+  margin-bottom: 0px;
+}
+ul{
+  margin-top: 0px;
+  color: #333333d7;
+  font-size: 16px;
+  font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.p-conteudo{
+  
+  font-family:"Nunito Sans", sans-serif ; 
+  margin: 20px 0px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  word-spacing: -02px;
+  
+}
+.article01 {
+  max-width: 588px;
+  margin-top: 10px  ;
+  padding: -1px 10px;
+  border-radius: 6px;
+  background-color: rgb(188, 216, 231);
+}
+
+article{
+  margin: auto;
+  text-align: center;
+}
+
+ article > h3{
+  color: #1C0051;
+  padding: 2px 1px ;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 10px auto;
+  width:100%;
+  max-width: 560px;
+}
+h3{
+  font-size: 1.5rem;
+}
+@media (max-width: 375px) {
+  h3{
+    font-size: 1rem;
+  }
+}
+.img-conteudo{
+  filter: drop-shadow( 1px 1px 5px #00000056);
+  display: flex;
+  margin: auto;
+}
+
+.text-imgs{
+  margin: auto;
+  text-align: center;
+  width: 499px;
+  margin-top: 10px;
+  font-size: 12px ;
+}
+
+@media(max-width: 375px) {
+    .text-imgs{
+      width: 290px ;
+    }  
+}
+  
+
+
+
+article > .links1 {
+  display: none;
+  color: #000000;
+  text-decoration: dashed;
+  margin-left: 10px;
+}
+
+article:hover > .links1 {
+  display: block;
+  color: #1C0051;
+}
+
+.img-videos{
+  margin: 0px 30px 1px;
+
+}
+.img-videos:hover{
+  box-shadow: 4px 4px 8px rgba(116, 112, 112, 0.521);
+  border-radius: 8px;
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.pimg{
+  text-align:  justify;
+  display: inline-block;
+  width: 247px;
+  height: -1px;
+  font-size: 14px;   
+  font-weight: 520;
+  margin-bottom: 28px;
+  margin-top: 0px;
+}
+.logo-curso  {
+  display: inline;
+  float: left;
+  margin-top: 3px;
+}
+div{
+  display:inline;
+  color: rgb(24, 24, 24);
+  font-size: 20px;
+  text-align: left;
+  margin-right: 90px;
+}
+.inline-block-element {
+  display: inline;
+  width: 100px;
+  height: 22px;
+  border: 0px;
+  margin: 0px;
+  padding: 4px 10px 4px 10px;
+  font-family: "Roboto", sans-serif;  
+  font-optical-sizing: auto; 
+  font-weight: 500; 
+  font-style: normal;
+  font-size: 18px;
+}
+
+
+
+ footer{
+  background-color: #3333337a;
+  color:rgb(3, 3, 3);
+  text-align:center;
+  padding: 2px;
+  position:relative;
+  margin-top: 35px;
+  height: 96px;
+} 
+.normel{
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 7px;
+  
+
+}
+.rodape00{
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+
+}
+.rodape00:hover{
+  color: rgb(14, 0, 143);
+}
+
+.rede-you{
+  width: 30px;
+  height: 30px;
+  padding: 1px 19px ;
+  margin-top: 10px;  
+}
+.rede-you:hover{
+  transform:   scale(1.2)  ;
+  transition-duration: .3s;
+}
+.redes00{
+  width: 25px;
+  height: 25px;
+  padding: 1px 19px ;
+  margin-top: 10px;
+}
+.redes00:hover{
+  transform: scale(1.1);
+  transition-duration: .3s;
+}
+.links001{
+  text-decoration:dashed;
+}
+
+
+
+ /*imagens dinamicas  */
+ 

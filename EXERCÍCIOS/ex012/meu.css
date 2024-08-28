@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=wght@0,400..900;1,400..900&display=swap');
+
+ 
+body{
+
+    *{
+     height: 100%;
+}
+     background-image: linear-gradient(to bottom,#d8dde4 1%,#6e88a7);
+     background-attachment: fixed;
+    }
+main{
+     
+     background-color: #ffffff;
+     border-radius: 10px;
+     box-shadow: 5px 5px 16px #002333ab;
+      width: 550px;
+      padding: 10px;
+      margin: auto;
+      
+}
+h1{
+     font-family: "Bebas Neue", sans-serif;
+     color:#002333 ;
+     text-align: center;
+     text-shadow: 1px 1px 2px #0023339c;
+     font-size: 2.5em;
+}
+
+
+h2{
+     font-family:"Bebas Neue", sans-serif;
+     color:#106b6d;
+}
+p{    
+    
+     font-family:  Garamond, serif;
+     font-size: 20px;
+     box-shadow: 3px 3px 5px #7b7d80;
+     background-color: #dbe1e6;
+     border-radius: 10px;
+     width: 510px;
+     padding: 6px;
+     margin: 15px;
+     text-align: justify;
+     line-height: 23px;
+}

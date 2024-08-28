@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+10&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jacquard+24&family=Jersey+10&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jacquard+24&family=Jersey+10&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jacquard+24&family=Jersey+10&family=Lugrasimo&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Jacquard+24&family=Jersey+10&family=Lugrasimo&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Jacquard+24&family=Jersey+10&family=Lugrasimo&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Slab:wght@100..900&family=Sevillana&display=swap');
+@font-face {
+    font-family:KOLAK;
+    src: url(fonts/KOLAK.otf)
+  ;
+}
+@font-face {
+  font-family:BronzionBlack ;
+  src: url(fonts/BronzionBlack_PERSONAL_USE_ONLY.otf)format('opentype');
+}
+@font-face {
+  font-family:Carmela;
+  src: url(fonts/Carmela.otf) 
+}
+@font-face {
+  font-family:Hezarttest ;
+  src: url(fonts/Roadly\ Hezarttest.otf);
+}
+@font-face {
+  font-family:Somer ;
+  src: url(fonts/Somer.ttf);
+}
+body{
+  background-color: #202124;
+}
+
+h1{
+    font-family:"KOLAK";
+    font-weight: 600;
+    font-size: 3em;
+    color: #ffffff;
+}
+a:hover{
+  color:rgb(145, 145, 175);
+ 
+}
+a{
+    text-decoration:none; 
+    color: rgb(230, 223, 223) ;  
+}
+#pp{
+  color: #d6dae6;
+  text-align:left;
+  text-indent: 1%;
+ 
+  
+}
+.a-p{
+  color: #4994F8;
+}
+p{
+  text-align: justify;
+  text-indent: 30px;
+  color: #ffffff;
+  
+  
+}
+
+.link{
+  text-align: center;
+  text-indent: 12px;
+}
+hr{
+  text-align: center;
+}
+
+  .css2{
+    font-family: "Sevillana", cursive;
+    font-size: 2em;
+    text-align: center;
+  }
+ .css3{
+    font-family:"Oswald", sans-serif ;
+  font-size:2em;
+  text-align: center;
+  }
+  .css4{
+    font-family:"Roboto Slab", serif ;
+  font-size:2em; 
+  }
+  .css5{
+    font-family:"Jersey 10", sans-serif;
+  font-size:2em;
+  }
+  .css6{
+    font-family:"Jacquard 24", system-ui;
+  font-size:2em;
+  }
+  .css7{
+    font-family: "Bebas Neue", sans-serif;
+  font-size:2em;
+  }
+  .css8{
+    font-family: "Lugrasimo", cursive ;
+  font-size:15px;
+  }
+  .css9{
+    font-family: "Caveat", cursive ;  
+  font-size:2em;    
+  }
+  .css10{
+    font-family: "Rajdhani", sans-serif ;
+  font-size:2em; 
+  }
+
+h2{
+  text-align: center;
+font-family: "KOLAK";
+font: optional;
+font-size: 2em;
+color:#ffffff;
+background-color:#05534c46;
+border-radius: 10px;
+box-shadow: 5px 5px 6px#10403b6b;
+
+
+}
+.ul001{
+  color: rgb(198, 206, 195);
+}
+.li1{
+ font-family:KOLAK;
+ font-size: 20px;
+}
+.li2{
+  font-family:BronzionBlack;
+  font-size: 20px;
+}
+.li3{
+  font-family:Carmela;
+  
+}
+.li4{
+  font-family:Hezarttest;
+}
+.li5{
+  font-family:Somer;
+}

@@ -1,0 +1,58 @@
+@charset "UFT-8";
+
+
+
+div >p{
+    display: none;
+}
+div:hover >p{
+    display: block;
+    background-color: rgb(99, 96, 96);
+    color: rgb(238, 238, 238);
+}
+div >.p01{
+    display: none;
+    
+}
+#d01:hover >.p01{
+    background-color: rgb(181, 206, 238);
+
+}
+a{
+    text-align: center;
+    color: rgb(27, 27, 27);
+}
+
+.div-01{
+    background-color: rgb(206, 204, 204);
+    height: 200px;
+    width: 200px;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0) ;
+    
+}
+#nume1{
+    text-align: center;
+    background-color: rgb(197, 196, 196);
+    height: 200px;
+    width: 200px;
+    
+}
+#nume2{
+    text-align: center;
+    background-color: rgb(197, 196, 196);
+    height: 200px;
+    width: 200px;
+}
+#nume3{
+    text-align: center;
+    background-color: rgb(197, 196, 196);
+    height: 200px;
+    width: 200px;
+}
+#nume4{
+    text-align: center;
+    background-color: rgb(197, 196, 196);
+    height: 200px;
+    width: 200px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imag,video e audio</title>
+</head>
+<body>
+    <h1><center>TESTANDO OS MEUS CONHECIMENTOS DE MÍDIA</center></h1>
+<hr>
+    <h2><center>FOTOS DINÁMICAS</center></h2>
+    <center>
+    <picture>
+        <source  media="(max-width: 850px)"
+        srcset="imagem/imagem-p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagem/imagem-m.jpg" type="image/jpg">
+        <img src="imagem/imagem-g.jpg" alt="imagem flexivel funciona">
+    </picture>
+    </center>
+
+    <h2><center>AÚDIOS</center></h2>
+    <PIcture>
+        <audio preload="metadata" controls autoplay loop>
+            <source src="audio/gustavo-bravett-babel.m4a" type="audio/mpeg">
+    </PIcture>
+
+    <h2><center>VÍDEO DO ARQUIVO-VÍDEO DO YouTube</center></h2>
+    <ul>
+     <li>
+          esse é um vídeo do youtube
+     </li>
+    </ul>
+    <center>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/e9dZQelULDk?si=WOcDv1FnnUwDc3hK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </center>
+   <ul>
+    <li>
+        esse é um vídeo do ARQUIVO
+    </li>
+   </ul>
+<center>
+  <picture>
+     <video width="560" height="315" poster="imagem/images.jpg" controls autoplay loop>
+     <source src="video/video-index.html.mp4" type="video/mp4">
+     </video> 
+  </picture>
+</center>
+</body>
+</html>
