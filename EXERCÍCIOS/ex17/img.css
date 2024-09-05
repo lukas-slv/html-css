@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+
+body{
+   background-image: url(imagens/wp4566581.webp);
+   background-size: 100% ;
+}
+main{
+    
+    padding: 20px 100px;
+}
+.navbar{
+    text-align:  center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.nav-links{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    transition: 0.5s;
+    font-weight: 700;
+    font-size: 14px ;
+    list-style: none;
+    text-decoration: none; 
+    margin: 5px;
+}
+.nav-links:hover{
+    border: 1px solid rgba(255, 255, 255, 0.829);
+    background-color: rgba(240, 248, 255, 0.342);
+    box-shadow: 4px 4px 10px rgba(189, 189, 189, 0.5), -3px -3px 10px rgba(185, 185, 185, 0.418);
+    padding: 5px 10px ;
+    border-radius:7px ;
+    color: rgba(255, 255, 255, 0.74);
+}
+
+h1{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 50px 0px 0px 30px;
+    color: rgb(219, 219, 219);
+}
+.p-h1{
+    margin: 0px 0px 0px 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p.conteudo{
+    color: rgb(186, 194, 191);
+}
+p{
+    color: rgba(245, 245, 245, 0.479);
+    margin: auto;
+    margin-top: 20px;
+    font-weight: 900;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+#q1{
+    background-image: url(imagens/img-p03.avif);
+    background-size: 180%;
+}
+#q1:hover{
+    box-shadow: 10px 10px 20px rgb(32, 19, 37), -10px -10px 20px rgba(32, 19, 37, 0.404);
+    width: 310px;
+    height: 310px;
+    transition: 0.7s;
+}
+
+#q2{
+    background-image: url(imagens/img-p02.jpg) ;
+    background-size: cover;
+}
+#q2:hover{
+    width: 310px;
+    height: 310px;
+    box-shadow: 10px 10px 20px rgba(112, 35, 129, 0.575), -10px -10px 20px rgba(112, 35, 129, 0.575);
+    transition: 0.7s;
+}
+
+#q3{
+    background-image: url(imagens/img-p01.jpg) ;
+    background-size: cover;
+}
+#q3:hover{
+    transition: 0.7s;
+    width: 310px;
+    height: 310px;
+    box-shadow: 10px 10px 20px #5d0fa7a8, -10px -10px 20px #5d0fa7a8;
+}
+
+div.quadrado{
+    display: flex;
+    border-radius: 8px;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}
+section{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
