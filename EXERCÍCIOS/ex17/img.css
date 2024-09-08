@@ -6,7 +6,6 @@ body{
    background-size: 100% ;
 }
 main{
-    
     padding: 20px 100px;
 }
 .navbar{
@@ -23,7 +22,6 @@ main{
     list-style: none;
     text-decoration: none; 
     margin: 5px;
-    
 }
 .nav-links:hover{
     border: 1px solid rgba(255, 255, 255, 0.829);
