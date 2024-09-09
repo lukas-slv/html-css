@@ -16,18 +16,23 @@ main{
 .nav-links{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: aliceblue;
-    transition: 0.5s;
+    transition: 0.3;
     font-weight: 700;
     font-size: 14px ;
     list-style: none;
     text-decoration: none; 
     margin: 5px;
+  
 }
 .nav-links:hover{
-    border: 1px solid rgba(255, 255, 255, 0.829);
+    border: 1px solid rgb(255, 255, 255);
     padding: 5px 10px ;
     border-radius:7px ;
-    color: rgba(255, 255, 255, 0.74);
+    color: rgb(255, 255, 255);
+    transition: 0.8s;
+    background-color: rgba(165, 165, 165, 0.212);
+    box-shadow: 3px 3px 10px rgba(214, 214, 214, 0.548), -3px -3px 10px rgba(153, 153, 153, 0.356);
+    
 }
 
 h1{
@@ -57,7 +62,7 @@ p{
     filter: grayscale(100%);
 }
 #q1:hover{
-    box-shadow: 10px 10px 20px rgb(32, 19, 37), -10px -10px 20px rgba(32, 19, 37, 0.404);
+    box-shadow: 10px 10px 20px rgba(32, 19, 37, 0.726), -10px -10px 20px rgba(32, 19, 37, 0.404);
     width: 310px;
     height: 310px;
     transition: 0.7s;
@@ -88,7 +93,7 @@ p{
     transition: 0.7s;
     width: 310px;
     height: 310px;
-    box-shadow: 10px 10px 20px #5d0fa7a8, -10px -10px 20px #5d0fa7a8;
+    box-shadow: 10px 10px 20px #5e0fa783, -10px -10px 20px #5e0fa769;
     filter: grayscale(0%);
 }
 
