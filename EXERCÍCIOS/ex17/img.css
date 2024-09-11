@@ -3,7 +3,12 @@
 
 body{
    background-image: url(imagens/wp4566581.webp);
-   background-size: 100% ;
+   background-size: cover ;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   
+
+
 }
 main{
     padding: 20px 100px;
