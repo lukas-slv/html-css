@@ -7,6 +7,8 @@ body{
    background-repeat: no-repeat;
    background-attachment: fixed;
    backdrop-filter: blur(3px);
+
+   
 }
 main{
     padding: 10px 90px;
@@ -14,7 +16,7 @@ main{
     backdrop-filter: blur(10px);
     background-color: rgba(12, 12, 12, 0.199);
     box-shadow: 3px 3px  10px rgba(36, 36, 36, 0.589);
-    width: 900px;
+    max-width: 900px;
     margin: auto;
     margin-top: 10px;
 }
