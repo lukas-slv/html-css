@@ -9,12 +9,12 @@
     padding: 0px;
 }
 body{
-    background-color: aliceblue;
+    background-color: rgb(240, 248, 255);
     min-height: 100vh;
 
 }
 header{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.829);
     color: beige;
     height: 300px;
     box-shadow: 3px 3px 19px rgba(0, 0, 0, 0.541);
@@ -98,6 +98,6 @@ section.img#img02{
     color: rgb(255, 255, 255);
 }
 footer{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.829);
     height: 40px;
 }
