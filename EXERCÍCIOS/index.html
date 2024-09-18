@@ -16,7 +16,11 @@
         height: 100px;
         border-collapse:collapse ;
         background-color: rgb(202, 202, 202);
-       
+    }
+    @media (max-width: 375px){
+        table{
+            width: 100%;
+        }
     }
     td{
         text-align: left;
@@ -26,32 +30,37 @@
     }
     tr.linha{
         background-color: rgb(153, 151, 151);
-        
     }
-    
+    @media(max-width: 375px){
+        tr{
+            font-size: 12px;
+        }
+    }
 </style>
 <body>
     <h1>trabalhando com tabelas</h1>
     <table>
         <tr class="linha">
-            <td>A1. linha 1</td>
-            <td>B1. linha 2</td>
-            <td>C1. linha 3</td>
+           	
+
+            <td>Nome</td>
+            <td>Idade</td>
+            <td>Cidade</td>
         </tr>
         <tr>
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
+            <td>João</td>
+            <td> 25</td>
+            <td>Belo Horizonte</td>
         </tr>
         <tr>
-            <td>A3</td>
-            <td>B3</td>
-            <td>C3</td>
+            <td>Maria</td>
+            <td>22</td>
+            <td>Rio de Janeiro</td>
         </tr>
         <tr>
-            <td>A4</td>
-            <td>B4</td>
-            <td>C4</td>
+            <td>Ana</td>
+            <td>30</td>
+            <td>São Paulo</td>
         </tr>
     </table> 
     
