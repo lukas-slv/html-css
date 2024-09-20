@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio-004-scope</title>
+</head>
+<style>
+   body{
+       background-color: rgb(230, 231, 231);
+   }
+   table{
+       margin: auto;
+       border-collapse: collapse; 
+       width: 500px;
+       
+   }
+   tr, td, th{
+       padding: 8px;
+       border: 1px solid black;
+   }
+   th{
+    background-color: rgb(95, 95, 95);
+    height: 10px;
+    color: rgb(255, 255, 255);
+   }
+   .th-mod{
+    text-align: left;
+   }
+   .td-nt-hm{
+    text-align: center;
+   }
+   .nomeros{
+    text-align: center;
+   }
+</style>
+<body>
+    <table>
+        <thead>
+           <tr>
+              <th rowspan="2">Área</th>
+              <th rowspan="2">Disciplinas</th>
+              <th colspan="2">Notas</th>
+              <th rowspan="2">Média</th>
+           </tr>
+           <tr>   
+              <th>Nota1</th>
+              <th>Nota2</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="td-nt-hm" rowspan="4"><strong>Exatas</strong></td>
+                <td >Matemática</td>
+                <td class="nomeros">0,0</td>
+                <td class="nomeros">0,0</td>
+                <td class="nomeros">0,0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class="nomeros">0,0</td>
+                <td class="nomeros">0,0</td>
+                <td class="nomeros">0,0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class="nomeros">0,0</td>
+                <td class="nomeros">0,0</td>
+                <td class="nomeros">0,0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="nomeros">0,0</td>
+                <td class="nomeros">0,0</td>
+                <td class="nomeros">0,0</td>
+            </tr>
+            <tr>
+                <th class="th-mod" colspan="4">Média de Exatas</th>
+                <th>0,0</th>
+               
+            </tr>
+            <tr>
+                <td class="td-nt-hm" rowspan="2"><strong>Humanas</strong></td>
+                <td>Histórias</td>
+                <td class="nomeros">0,0</td>
+                <td class="nomeros">0,0</td>
+                <td class="nomeros">0,0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="nomeros">0,0</td>
+                <td class="nomeros">0,0</td>
+                <td class="nomeros">0,0</td>
+            </tr>
+            <tr>
+                <th class="th-mod" colspan="4">Média de Humanas</th>
+                <th>0,0</th>
+               
+            </tr>
+             
+        </tbody>
+        
+    </table>
+</body>
+</html>
