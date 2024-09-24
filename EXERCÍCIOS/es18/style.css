@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+
 body{
     background-color: rgb(220, 220, 226);
 }
@@ -28,8 +30,11 @@ thead >tr>th{
     top: -1px;  
 }
     @media(max-width: 720px){
-        table{
-            width: 100%;
+       #container{
+                overflow-x: auto;
+            } 
+        table{  
+            width: 500px;
         }
     }
     @media(max-width: 510px){
@@ -37,7 +42,7 @@ thead >tr>th{
             font-size: 14px;
         }
         table{
-            width:100%;
+            width:500px;
         }
     }
 th, td{

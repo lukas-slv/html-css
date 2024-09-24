@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colgroup</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+    table{
+        margin: auto;
+        border-collapse: collapse;
+    }
+    th, td{
+        padding: 8px;
+        border: 1px solid black;
+    }
+    
+    col.cnome{
+        background-color: aquamarine;
+    }
+    col.cgrupo{
+        background-color: azure;
+    }
+</style>
+<body>
+    <h1>Agrupando Colunas com colgroup</h1>
+    <table>
+        <colgroup>
+            <col class="cnome" span="2">
+            <col class="cgrupo" span="2">
+          
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Sexo</th>
+                <th>Estado</th>
+            </tr>          
+        </thead>
+        <tbody>
+            <tr>
+                <td>João</td>
+                <td>23 Ano</td>
+                <td>Masculino</td>
+                <td>São Paulo</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>18 Ano</td>
+                <td>Feminina</td>
+                <td>Tocantins</td>
+            </tr>
+            <tr>
+                <td>Paulo</td>
+                <td>27 Ano</td>
+                <td>Masculino</td>
+                <td>Rio de janeiro</td>
+            </tr>
+            <tr>
+                <td>Simone</td>
+                <td>17 Ano</td>
+                <td>Faminina</td>
+                <td>Manaus</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>
