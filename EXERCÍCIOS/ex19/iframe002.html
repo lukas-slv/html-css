@@ -1,19 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iframe</title>
+    <title>iframe Local</title>
 </head>
-
-<body>
-    <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt repellat dolores, dolorem tempora sit, suscipit alias odit architecto nulla repellendus modi laboriosam, perferendis dolorum harum fuga quidem quasi vero ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, eveniet necessitatibus harum tempore ex officia esse distinctio, aperiam nam sint fugit molestiae quae est repellendus impedit quia. Nulla, totam cum?
-    </p>
-    <iframe src="pag001.html" frameborder="0"></iframe>
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, aut eius aspernatur officiis dicta amet ad dolore odio eaque reprehenderit ratione temporibus quam error ab saepe? Sed at quasi obcaecati? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit quos, aut quaerat autem voluptatibus dicta eveniet. Autem voluptates repellat minus numquam quasi fugit tenetur voluptas doloremque neque, omnis nam aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quos voluptatem excepturi, perferendis eum enim, sapiente qui ab earum ducimus asperiores eaque obcaecati fugit magni, eveniet repudiandae recusandae velit? Atque.
-    </p>
+<style>
+    body{
+        padding: 0px 10px;
+        margin: 0px 170px;
+    }
+    h1{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    }
+    iframe{
+        box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.466);
+        border-radius: 10px;
+        padding: 5px;
+        display: block;
+        margin: auto;
+    }
     
+</style>
+<body>
+    <h1>Testando o uso de um iframe com conteúdo local</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa delectus quae dolorem non cupiditate dolores neque, modi repellendus amet ipsam, nesciunt quia ducimus voluptate quis nulla error temporibus eveniet repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae inventore, ex mollitia illum atque earum harum sit natus quibusdam velit aspernatur a hic dolore culpa fugit soluta nihil. Vel, tenetur!
+    </p>
+       <iframe 
+            src="http://127.0.0.1:5500/EXERCÍCIOS/ex18/desafio-003.html"
+            frameborder="0"
+            width="400"
+            height="400"
+            scolling="no">
+      </iframe> 
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse assumenda possimus enim nobis pariatur, exercitationem vel debitis ipsam! Impedit accusantium ipsam inventore rem eveniet dolorum sit laudantium, nobis voluptate vel! 
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, iusto praesentium? Numquam, ratione? Nostrum veniam inventore maxime possimus, voluptate nam sapiente adipisci similique unde dolorum? Suscipit velit repellat repellendus hic.
+      </p> 
 </body>
 </html>
