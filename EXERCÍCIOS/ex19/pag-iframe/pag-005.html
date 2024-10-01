@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<style>
+    body{
+        background-color: aliceblue;
+    }
+    a{
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 90px;
+        font-size: 1em;
+        color: black;
+        text-decoration: none;
+    }
+    p{
+        text-align: center;
+    }
+</style>
+<body>
+    <a href="#" onclick="clicou()">clique aqui</a>
+   <div id="saida"></div>
+
+
+    <script>
+        function clicou(){  
+            s = window.document.getElementById('saida')
+            s.innerHTML += '<p>Obrigado por clicar</p>'
+        }
+    </script>
+</body>
+</html>
