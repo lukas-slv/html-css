@@ -11,11 +11,15 @@
      </style>
 </head>
 <body>
-    <h1>FORMULÁRIOS HTML5</h1>
-    <form>
-        <p>nome:<input type="text" nome="nome" id="nome"></p>
-        <p>sobrenome:<input type="text" nome="sobrenome" id="sobrenome"></p>
+    <h1>FORMULÁRIO SIMPLES HTML5</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p><label for="fnome"> nome:</label>
+            <input type="text" nome="nome" id="fnome"></p>
+        <p><label for="fsobrenome"> sobrenome:</label>
+            <input type="text" nome="sobrenome" id="fsobrenome"></p>
         <p><input type="submit" value="enviar"></p>
+
     </form>
 </body>
 </html>
