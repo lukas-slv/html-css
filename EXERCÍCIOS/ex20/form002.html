@@ -79,12 +79,19 @@
         margin-top: -14px;
         color: rgba(255, 255, 255, 0.678);
     }
-    .hr-h1{
+    hr{
             width: 220px;
             margin: auto;
+            margin-bottom: 10px;
+            border: 1px solid rgb(255, 255, 255);
     }
     img{
         margin: 0px;
+        padding: 0px;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        margin-top: 10px;
     }
 
     .botao{
@@ -117,9 +124,8 @@
     
     <form action="cadastro.php" method="post">
         <h1>Crie sua conta</h1>
-        <hr class="hr-h1">
+        <hr>
         <div>
-          
             <label for="iusu">Usuário:</label> 
             <input class="input" type="text" nome="usu" id="iusu" required minlength="5" maxlength="15" autocomplete="username" >
         </div>
@@ -143,8 +149,6 @@
             <input class="botao" type="submit" value="Logar">
             <input  class="bot" type="reset" value="Limpar">
         </div>
-       
     </form>
-    
 </body>
 </html>
