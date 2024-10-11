@@ -12,7 +12,7 @@
       }
 
       body{
-          background-image: url(imgs/img-002.jpg) ;
+          background-image: url(imgs/pexels-001.jpg) ;
           background-size: no-repeat;
           background-position: center center;
           background-attachment: fixed;
@@ -28,7 +28,7 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -90%);
-          background-image: linear-gradient(to top, #0f0c29a4, #302b63b0, #0000ff23);
+          background-image: linear-gradient(to top, #0f0c29ab, #302b6398, #0000ff00);
           backdrop-filter: blur(5.5px);
           box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.63);
           color: white;
@@ -37,6 +37,7 @@
           width: 350px;
           height: 350px;
           margin: auto;
+          
       }
 	div{
         text-align: center;
@@ -46,24 +47,47 @@
         display: block;
         text-align: left;
         font-size: 14px;
+        color: rgb(255, 254, 254);
     }
-    .input{
-        border-radius: 20px;
+    input{
         padding: 10px;
         width: 290px;
+        background-color: rgba(112, 112, 112, 0);
+        color: rgb(255, 255, 255);
+        border-bottom: 1px solid rgb(255, 255, 255);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        outline: none;
+    }
+    
+    .input::placeholder {
+        color: rgba(255, 255, 255, 0.603);
+        font-size: 12px;
+    }
+    a{
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 900;
+       
     }
    p{
         text-align: start;
         margin: 10px;
         font-size: 14px;
         margin-bottom: -15px;
+        margin-top: -14px;
+        color: rgba(255, 255, 255, 0.678);
+    }
+    .hr-h1{
+            width: 220px;
+            margin: auto;
     }
     img{
         margin: 0px;
     }
 
     .botao{
-        
         margin: 5px;
         border-radius:20px;
         padding: 5px;
@@ -92,22 +116,28 @@
 <body>
     
     <form action="cadastro.php" method="post">
+        <h1>Crie sua conta</h1>
+        <hr class="hr-h1">
         <div>
-            <label for="iusu">Usuário:</label>
-            <input class="input" type="text"nome="usu" id="iusu" required minlength="5" maxlength="15" placeholder="nome de Usuário" autocomplete="username" >
+          
+            <label for="iusu">Usuário:</label> 
+            <input class="input" type="text" nome="usu" id="iusu" required minlength="5" maxlength="15" autocomplete="username" >
         </div>
         <div>
            <label for="igmail">E-mail:</label>
-           <input class="input" type="text" nome="gmail" id="igmail" required placeholder="E-mail">
+           <input class="input" type="text" nome="gmail" id="igmail" required >
         </div>
         <div>
             <label for="isen">Senha:</label>
             <input class="input" type="password" nome="sen" id="isen"  required minlength="8" maxlength="15" placeholder="mínimo 8 digitos" autocomplete="current-password" >
         </div>
-        <hr>
+        <p>
+            
+        </p>
+       
         <p>
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAcxJREFUOE+1lDtIHFEUhr8zLFiKKBY+UdAiiKCdjUWw0RiFYOHsRgQRDBjSWtgIBq1SKiYWEmVnQLtYWBiQVKZIkyISUqgIKhg0CCLEB0dnRs3sunecRXK7gfN/5zm/8B+exGGqTQkWNVxwTCFb8oHzKJ0Rqn0+5A3CC6AqBDkDvqAscsGcLHGZnSAnVFNMoowAD3WyifJMXH6GwfdEmmIGZSjOWG5ijlBaxeXHrSYDqjajCG/zAAahyi4JmmWBA+/zDqpJ6oANIJEDeohFD0oLyoQh6Zw4DGRDZ4FBg2BPHMo1RSfKsiFGSVAp8+z6lapXcZLfQLFBsC8OZWrzHOGTcTzKK3F5H0B7qcRiJ2KW8aDgjyCA2jQifI+Axmnfk6+Jw9MAmqQa2I6AxlmUJ18Rh44A2k4BRZwCVt7nlHn105JmOHxSq0CbAXoCvEOoR7EjFtUlLsthaB8w/4iT2uMPtbLC33/QMSx+8Q1oygH2TGQdpRihwZD4pTikM44/tDAPXJLnbKfE4fWtJpehPEFZA0pjgZVZXIbE/4eCZ7K+CpRxoD/C/rav1WOS5mN28ki/9B1f6L6Zcy1w7JuO8hmXr+HqMi8rVo/5BV0BZmuQFlFQQ7MAAAAASUVORK5CYII="/>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta itaque eius commodi. Dicta voluptatibus, autem aut 
+           Não tem uma conta? <a href="#">Clique aqui</a>
         </p>
         <div>
             <input class="botao" type="submit" value="Logar">
