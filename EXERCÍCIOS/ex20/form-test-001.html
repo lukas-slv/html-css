@@ -7,17 +7,36 @@
     <title>form-teste</title>
 </head>
 <body>
-    <header>
-          <h1>logo</h1> 
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Cadastrar</a>
-            <a href="#">Contatos</a>
-            <button class="log">Login</button>
-        </nav>
-    </header>
+   
+    <nav class="navbar">
+        <div class="logo-menu-container">
+          <section>
+            <h1 class="logo-text">logo</h1>
+          </section>
+        </div>
+     
+
+      <div class="right-container">
+         <section class="nav-links">
+               <a class="nav-item" href="#">home</a>
+               <a class="nav-item" href="#">sobre</a>
+               <a class="nav-item" href="#">contato</a>
+               <a class="nav-item" href="#">perfil</a>
+               <button class="login-button">login</button>
+         </section>
+      </div>
+
+      
+
+      <div class="menu-toggle">
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
+      </div>
+    </nav>
+
     <main>
-        <form class="container">
+        <form class="container" action="cadastro.php" method="post">
             <h1 class="login">Login</h1>
              <div class="usuario">
                 <label for="iusu">Usuario:</label>
@@ -34,7 +53,7 @@
              </div>
 
              <p>
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAr9JREFUOE+1lUtIVGEUx3/njq+u40oTigothMoQglYRLqRNQQ8ClxJUhkSPRSDojHBp7q2gdtWiB0URBD2IKHpQEC2iiDaSlm1MiCA0C2nmG8w7c+qOjc1Dp1x0lvc75/ed75z/OVf4Dyb/wlSnpo5UqhE/NcH45Ac5x1SpuDmhGq1qREIHUd0BLMuB/EB5hsV1hswluUGq8IJZoRq1XaAXCM4/o/Rj6RtU6oFmoAUoRxlGQpvF/f4+F1wE1Yh9BmEfyggh6ZIjiUeFmahDmCn7GMJ+4CtitUosPpj1y4NqxO5F8ICHlJl2cYiXqp1Gw22Qvg+MUmatEyc+GvjPQDVauQJCQ8A4fvkqOT7xLQvUnppaQulbiD6XmInkXqTR6sOgJ1Euimd250Mj9nmEPQidEjMX8gIdezE+n4B74poteWd7KafeDmragOpS8ZKfMplqkHHUHgOtYDRZWygZLQHNxGezhS5xzdlpqLNgCb58RLgjMbO9uDFzZ5qJ7ws3o+mBbAmmob3VLVjaD1wS1+yaN9TBxrcTqD4VL9k2DQ2EjjUM3BTXtM8fWlOHnxoLVCOu2fT7+VTg20lgUFwTCDvPtLuuhgpzGNX34iWvFZ1HqloR6xlwRlyzP0dS9mNgI1irxY2/y+vw36BR+xzQibJVPHP3DzRS3YHoFYTbEjPBvM9Yqe5rtLIJQsE0jTNhGuQUk3+gDha+/RpYC9ItbuLEjPidoDzh9aT5IkfjAwVD8QK0CZEOiSWu5ol/WlpVDfjWq1+1WYjSh2c8yci42DK+KXmAykqU0+KZA1mv4oXSE15NKP0EWAS8AC6j2k95cgC/aiFqrcHSDagcAiqD5uCaA7mXz776gmGYkhjCztz9kC8JRn4NoiNe4nLhO0pu/szG91PbMnUWlqMyAfoW0SfEki/nKs0//U5mq2mpbz8BWOU3Jfb281wAAAAASUVORK5CYII="/>
+                <abbr title="Termos de usu"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAr9JREFUOE+1lUtIVGEUx3/njq+u40oTigothMoQglYRLqRNQQ8ClxJUhkSPRSDojHBp7q2gdtWiB0URBD2IKHpQEC2iiDaSlm1MiCA0C2nmG8w7c+qOjc1Dp1x0lvc75/ed75z/OVf4Dyb/wlSnpo5UqhE/NcH45Ac5x1SpuDmhGq1qREIHUd0BLMuB/EB5hsV1hswluUGq8IJZoRq1XaAXCM4/o/Rj6RtU6oFmoAUoRxlGQpvF/f4+F1wE1Yh9BmEfyggh6ZIjiUeFmahDmCn7GMJ+4CtitUosPpj1y4NqxO5F8ICHlJl2cYiXqp1Gw22Qvg+MUmatEyc+GvjPQDVauQJCQ8A4fvkqOT7xLQvUnppaQulbiD6XmInkXqTR6sOgJ1Euimd250Mj9nmEPQidEjMX8gIdezE+n4B74poteWd7KafeDmragOpS8ZKfMplqkHHUHgOtYDRZWygZLQHNxGezhS5xzdlpqLNgCb58RLgjMbO9uDFzZ5qJ7ws3o+mBbAmmob3VLVjaD1wS1+yaN9TBxrcTqD4VL9k2DQ2EjjUM3BTXtM8fWlOHnxoLVCOu2fT7+VTg20lgUFwTCDvPtLuuhgpzGNX34iWvFZ1HqloR6xlwRlyzP0dS9mNgI1irxY2/y+vw36BR+xzQibJVPHP3DzRS3YHoFYTbEjPBvM9Yqe5rtLIJQsE0jTNhGuQUk3+gDha+/RpYC9ItbuLEjPidoDzh9aT5IkfjAwVD8QK0CZEOiSWu5ol/WlpVDfjWq1+1WYjSh2c8yci42DK+KXmAykqU0+KZA1mv4oXSE15NKP0EWAS8AC6j2k95cgC/aiFqrcHSDagcAiqD5uCaA7mXz776gmGYkhjCztz9kC8JRn4NoiNe4nLhO0pu/szG91PbMnUWlqMyAfoW0SfEki/nKs0//U5mq2mpbz8BWOU3Jfb281wAAAAASUVORK5CYII="/></abbr>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam sint quas quibusdam ex fugiat! Laboriosam sed, nostrum at tempora!
              </p>
              <div class="botões">

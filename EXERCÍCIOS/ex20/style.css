@@ -7,48 +7,124 @@
     font-family: Arial, Helvetica, sans-serif ;
 }
 body{
-
     background-image: url(imgs/pexels-002.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
-header{
-    display: flex;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 99;
-    padding: 10px; 
-    color: rgb(#011526);
-}
-.log{
-    margin: 10px;
-    width: 100px;
-    height: 40px;
-    font-weight: 900;
-    font-family: Arial, Helvetica, sans-serif;
-    outline: none;
-    border: 2px solid #011526;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0);
-    color: rgb(#011526);
-    cursor: pointer;
-    transition: all 0.7s;
-   
-    
-}
-.log:hover{
-   background-color: #011526;
-    color: rgb(255, 255, 255);
-}
- nav> a{
+.logo-text{
+    font-size: 40px;
     margin: 10px;
     color: #011526;
+    margin-left: 30px;
+
+}
+.logo {
+    display: inline;
+    float: left;
+    margin-top: 3px;
+}
+
+.navbar{
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    list-style: none;
+    align-items:center;
+}
+.nav-item{
+    font-size: 15px;
+    color: #011526;
+    margin: 0 15px;
     text-decoration: none;
-    font-weight: 800;
+    transition-duration: .5s;
+}
+.nav-item:hover{
+    color:#0115269a ;
+}
+.logo-menu-container{
+    display: flex;
+    align-items: center;
+    padding-bottom: 3px;
+}
+.right-containe{
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+}
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.menu-toggle .bar{
+    border-radius: 8px;
+    width: 27px;
+    height: 4px;
+    background-color: #011526;
+    margin: 3px 0;
+}
+
+@media (max-width: 768px){
+    .nav-links{
+        display: none;
+    }
+
+ .menu-toggle{
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+} 
+}
+.navbar .active .nav-links{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color:#011526;
+    width: 200px;
+}
+
+.navbar .active .menu-toggle{
+     display: none;
+}
+.menu-span{
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    margin-left: 696px;
+} 
+
+button{
+    background-color: #011526;
+    color: #fff;
+    margin-top: -130px;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-right: 30px;
+    border-radius: 8px;
+    padding: 18px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    transition-duration: .7s;
+}
+
+button:hover{
+    background-color: transparent;
+    color: #011526;
+    border: 1px solid #011526;
 }
 
 h1.login{
@@ -58,15 +134,16 @@ h1.login{
     margin: 10px ;
 }
 form{
-    margin: auto;
+    
+    margin: 100px auto;
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
     background-color: rgba(255, 255, 255, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.342);
     box-shadow: 7px 7px 20px #00000050;
     border-radius: 20px;
     width: 400px;
-    height: 440px;
+    height: 400px;
     text-align: center;
     padding: 20px;
     
@@ -80,6 +157,7 @@ input{
     margin: 10px;
     width: 95%;
     height: 30px;
+    margin-top: -3px;
     border-top: none;
     border-width: none;
     border-left: none;
@@ -107,8 +185,26 @@ input{
     color: #011526;
     font-weight: 700;
 }
+img{
+    margin: 0px;
+    padding: 0px;
+    width: 17px;
+    margin-right: 3px;
+    margin-top: 10px;
+}
 p{
     text-align: left;
     font-size: 12px;
+}
+
+@media (max-width: 475px){
+    form{
+        width: 80%;
+        height: 360px;
+    }
+    h1.login{
+        font-size: 30px;
+        margin-top: 0px;
+    }
 }
 
