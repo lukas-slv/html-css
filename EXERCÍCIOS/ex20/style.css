@@ -73,6 +73,7 @@ form{
 }
 .usuario{
    text-align: left;
+   color: #011526;
 }
 input{
     display: block;
@@ -108,6 +109,6 @@ input{
 }
 p{
     text-align: left;
-    
+    font-size: 12px;
 }
 
