@@ -31,6 +31,21 @@
        </form> 
     </div>
 
+    <h2>Esse é um formulário simples com o elemento &lt;select&gt;</h2>
+    <div>
+        <form action="cadastro.php" method="post">
+            <fieldset>
+            <legend>Escolha seu carro</legend>
+            <label for="icars">carros</label>
+            <select name="cars" id="icars">
+                <option value="volvo">volvo</option>
+                <option value="saab">saab</option>
+                <option value="fiat">fiat</option>
+            </select>
+            </fieldset>
+        </form>
+    </div>
+
     <h2>Esse é um formulário de e-mail e telefone</h2>
     <div>
         <form action="cadastro.php" method="post">
@@ -64,13 +79,22 @@
         <input type="checkbox" nome="fut" id="ifut"> <label for="ifut">Futbol</label><br>
         <input type="checkbox" nome="vol" id="ivol"> <label for="ivol">Volei</label><br>
         <input type="checkbox" nome="nat" id="inat"> <label for="inat">Natação</label><br>
+    
+
+        <div>
+          <br>
+          <input type="submit" value="enviar">
+          <input type="reset" value="limpar">
+        </div>
+        </fieldset>
     </form>
 
-    <div>
-        <br>
-        <input type="submit" value="enviar">
-        <input type="reset" value="limpar">
-    </div>
-    
+    <h2> Esse é um formulário de sexo</h2>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>sexo</legend>
+            <input type="radio" name="sexo" id="isexmas" value="M" checked > <label for="isexmas">Masculino</label> <br>
+            <input type="radio" name="sexo" id="isexfem" value="F"> <label for="isexfem">Feminino</label>
+    </form>
 </body>
 </html>
