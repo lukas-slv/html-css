@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* aparelho deitado (landscape) */
+
+body {   
+    background-image: url(../imags/pexels-eberhardgross-1367192.jpg);
+    background-size: cover; 
+    background-position: center center;
+}

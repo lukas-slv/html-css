@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/* aparelho em pé (portrait) */
+
+body {
+    background-image: url(../imags/image-asset.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
