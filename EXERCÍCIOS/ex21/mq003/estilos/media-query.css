@@ -1,3 +1,106 @@
 @charset "UTF-8";
 
 /* Todas as demais mídias */
+
+/* Breakpoints Atuais (2024)
+============================
+Mobile pequeno: 320px a 479px
+Mobile médio: 480px a 767px
+Tablet: 768px a 1023px
+Laptop: 1024px a 1439px
+Desktop: 1440px a 1919px
+Desktop grande / 2K: 1920px a 2559px
+TV / 4K: 2560px ou mais 
+==============================*/
+
+
+/* media query para impressão */
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url(../imgs/back-print.jpg);
+    }
+    main{
+        border: 2px solid black;
+    }
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+    img#print {
+        display: block;
+    }
+        img#pc, img#tablet, img#tv, img#cll {
+            display: none;
+    }
+    section, p#pc, p#tablet, p#tv, p#mobile {
+        display: none;
+    }
+    main::after {
+        content: 'Essa impressão foi feita atraves do site www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-image: url(../imgs/back-tablet.jpg);
+    }
+    img#tablet {
+        display: block;
+    }
+    img#cll {
+        display: none;
+    }
+    
+    p#tablet {
+        display: block;
+    }
+    p#pc, p#cll, p#print, p#tv {
+        display: none;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imgs/back-pc.jpg);
+    }
+    img#pc {
+        display: block;
+    }
+    img#cll {
+        display: none;
+    }
+
+    p#pc {
+        display: block;
+    }
+    p#tablet, p#cll, p#print, p#tv {
+        display: none;
+    }
+}
+
+/* tv ou monitores 4k */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imgs/back-tv.jpg);
+    }
+    img#tv {
+        display: block;
+    }
+    img#pc, img#tablet, img#cll {
+        display: none;
+    }
+   
+    p#tv {
+        display: block;
+    }
+    p#pc, p#cll, p#tablet, p#print {
+        display: none;
+    }
+}
