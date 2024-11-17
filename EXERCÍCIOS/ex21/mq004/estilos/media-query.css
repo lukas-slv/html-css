@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/* media query para todos os dispositivos */
+
+@media screen and ( min-width: 768px) {
+    header{
+        height: 180px;
+    }
+   span.material-symbols-outlined{
+       display: none;
+   }
+   menu#itens{
+       display: block;
+       margin-top: 30px;
+   }
+   
+    ul{
+       display: block;
+       background-color: #041e35;
+       border-radius: 20px;
+       width: 600px;
+       height: 40px;
+       text-align: center;
+   }
+    li{
+       display: inline-block;
+       text-align: center;
+       margin-top: 0px;
+       padding: 0px;
+       margin: 10px 20px;
+
+       
+
+   }
+   li:hover{
+       background-color:#041e35 ;
+   }
+    a{
+       color: rgb(255, 255, 255);
+       text-decoration: none;
+       background-color: #041e35;
+      
+    
+   }
+    a:hover{
+       text-decoration: underline;
+   }
+    
+  
+    
+}

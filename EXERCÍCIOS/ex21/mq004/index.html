@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>media query</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
-
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
        <h1>MEU SITE</h1>
        <span class="material-symbols-outlined" onclick="menu()">menu</span>
@@ -16,10 +16,10 @@
        <menu id="itens">
           <ul>
                <li><a href="#">Contato</a></li>
-               <li><a href="#">Sobre</a></li>
-               <li><a href="#">Serviços</a></li>
-               <li><a href="#">Recursos</a></li>
-               <li><a href="#">Home</a></li>
+               <li><a href="#"class="link">Sobre</a></li>
+               <li><a href="#" class="link">Serviços</a></li>
+               <li><a href="#" class="link">Recursos</a></li>
+               <li><a href="#" class="link">Home</a></li>
           </ul>
        </menu>
     </header>
@@ -37,6 +37,18 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus, deserunt voluptatem natus eligendi iusto ducimus numquam harum obcaecati incidunt quibusdam dolore nesciunt ad eum autem consequatur vitae. Sed, laudantium!
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, porro voluptatibus hic nesciunt ipsum nihil consectetur suscipit illo aliquam, rem fuga modi veniam recusandae accusantium enim. Molestias eos culpa cupiditate?
             </p>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab excepturi expedita numquam modi vel vero itaque quaerat magni sapiente vitae porro laudantium, totam eligendi fuga libero labore, nostrum velit assumenda?
+            </p>
+
+            <h2> Testando media queries</h2>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus maxime corporis pariatur cumque soluta nisi velit. Voluptatibus, culpa incidunt quos animi accusantium esse, repellat tenetur blanditiis possimus pariatur laborum est!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta impedit autem vitae sit illum deleniti debitis non, explicabo eaque est corrupti, illo culpa cupiditate, unde in excepturi vero laborum temporibus.
+            </p>
+            <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, eos voluptatum a sed rem consequuntur perspiciatis vero necessitatibus quia impedit sit maiores magni et, iure aliquam culpa sint nam corporis!
+            </p>
        </article>
     </main>
 
@@ -52,6 +64,16 @@
                 itens.style.display = 'block'
             }
         }
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }
+            else {
+                itens.style.display = 'none'
+            }
+        }
+
     </script>
 </body>
 </html>
