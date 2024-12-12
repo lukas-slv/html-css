@@ -9,39 +9,36 @@
             margin: 0px;
             padding: 0px;
         }
-        main{
-            background-color: rgba(0, 0, 0, 0.137);
-            height: 100vh;
-            display: flex;
-        }
 
-        .container{
-            background-color: rgba(1, 253, 148, 0.253);
+        div.container{
+            background-color: rgba(0, 151, 88, 0.822);
             margin: 5px;
-            border: 1px solid black;
-            height: 300px;
-            width: 100vh;
-            display: flex;
-            flex-direction: row;
 
+            display: flex;
+            /* flex-direction: row;
+            flex-wrap: wrap-reverse; */
+            flex-flow: row wrap;
         }
 
-        .item{
+        div.item{
             border: 1px solid black;
             background-color: rgb(0, 119, 255);
             text-align: center;
             width: 100px;
             height: 100px;
+            flex:auto;
         }
     </style>
 </head>
 <body>
     <main>
         <div class="container">
-           <div class="item">1</div>
-           <div class="item">2</div>
-           <div class="item">3</div>
-           <div class="item">4</div>
+           <div class="item">Exemplo de bloco 1</div>
+           <div class="item">Exemplo de bloco 2</div>
+           <div class="item">Exemplo de bloco 3</div>
+           <div class="item">Exemplo de bloco 4</div>
+           <div class="item">Exemplo de bloco 5</div>
+
         </div>
     </main>
 </body>
